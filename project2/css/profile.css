@@ -1,0 +1,224 @@
+/* nav bar */
+.logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 33%;
+    display: flex;
+  
+  }
+  
+  .navbar {
+    font-family: Merriweather;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+  
+  }
+  
+  .nav-dark {
+    background: rgba(0, 0, 0, 0.9);
+  }
+  
+  .nav-list {
+    margin: 0%;
+    padding: 0%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-list li {
+    text-decoration: none;
+    list-style: none;
+    padding: 25px 30px;
+  }
+  
+  
+  .nav-list li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .nav-list li a:hover {
+    text-decoration: none;
+    color: grey;
+  }
+  
+  .rightNav {
+    width: 30%;
+    text-align: right;
+    padding: 0 23px;
+  }
+  
+  #search {
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid;
+    border-radius: 10px;
+  }
+  
+  .btn {
+    padding: 18px 30px;
+    margin: 7px 0;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: None;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .btn-sm {
+    padding: 6px 10px;
+    vertical-align: middle;
+  }
+  
+  .btn a {
+    color: white;
+  }
+  
+  .btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* end nav */
+  
+body {
+    background-image: linear-gradient(to left, rgba(58, 20, 0, 0.5), rgba(0, 28, 56, 0.5)), url(../media/profile1.jpg);
+    background-size: cover  ;
+    /* background: #4C90AD; */
+    font-family:sans-serif;
+    margin: 0px;
+  
+  }
+
+  .wrapper{
+    position:sticky;
+  }
+  
+  .userBox {
+    width: 550px;
+    height: 671px;
+    box-shadow: 0 1px 1px rgba(50,50,50,.40);
+    /* background: #fff; */
+    border-radius:8px;
+    margin:50px auto;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(0,0,0,0.9)), url(../media/profilebox.jpg);
+    background-size: cover;
+    background-blend-mode: soft-light;
+    /* background: #ebeaee7a; */
+  }
+  .userPic {
+    position:absolute;
+    box-shadow: 0 2px 2px rgba(50,50,50,.50);
+    width:125px;
+    height: 125px;
+    border:7px solid #fff;
+    border-radius:50%;
+    margin:10px;
+    margin-left:15px;
+    display:inline-block;
+    margin-top:-75px;
+    background: url('../media/user.png');
+    background-size:cover;
+  }
+  .header {
+    background: rgba(0, 0, 0, 0.9) url('../media/003.jpg');
+    background-position: 0 60%;
+    opacity: 0.75;
+    background-size:cover;
+    height:225px;
+    border-radius:8px 8px 20px 20px;
+    text-align:right;
+    line-height:23em;
+    
+    color:rgb(255, 255, 255);
+    
+  }
+  .header p {
+    margin-right:55px;
+    font-size:35px;
+    font-style:italic;
+    font-family: 'Alice' ;
+    text-shadow: 0px 2px 2px rgba(50, 50, 50, .6);
+  }
+  .middle {
+    text-align:left;
+    height:270px;
+    background-image: linear-gradient(to bottom,rgba(125, 125, 125, 0.7),rgba(52, 52, 52, 0.9) );
+    /* background: rgba(123, 123, 123, 0.7); */
+    box-shadow: 0 2px 2px rgba(50,50,50,.50);
+    line-height:.5em;
+    margin-top:-30px;
+    color:#ffffff;
+    /* font-weight: bold; */
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+}
+  .specify {
+    margin-top: -10px;
+    font-family: cursive;
+    font-size: 15px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    border-bottom: 1px solid;
+    border-color: #ffffff;
+    /* border-bottom: white; */
+  }
+  .tospecify { 
+    padding-top: 1rem;
+    margin-top: 5px;
+    font-family: 'Alice';
+
+    /* margin-left:199px; */
+    font-size: 30px;
+   
+  
+  }
+  .middleText {
+      margin-top:10px;
+    /* padding-top:5px; */
+  }
+.footer {
+    margin-top: -50px;
+    height: 250px;
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+    background-image: linear-gradient(to bottom, rgba(50, 50, 50, 0.2), rgba(0, 0, 0, 0.9) );
+    justify-content: center;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+}
+footer ul {
+  padding-left: 50px  ;
+    list-style:none;
+    font-size:25px;
+    margin:14px auto;
+    margin-left:-10px;
+  }
+  li span {
+    width: 115px;
+    border: 0.5rem;
+    font-size:40px;
+    text-align: center;
+    display:block;
+    /* background-color: rgba(0, 0, 0, 0.503); */
+  }
+.footer li {
+    margin:0 30px;
+    width: 115px;
+    color:#ffffff;
+    text-align: center;
+    text-align:center;
+    padding-left: 1.75rem;
+    margin-bottom: 1rem;
+    display:inline-block;
+  }
+  

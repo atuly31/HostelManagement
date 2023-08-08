@@ -1,0 +1,72 @@
+
+  
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <title>Complain</title>
+</head>
+
+<body class="laundrybody">
+    <nav class="navbar nav-dark">
+        <ul class="nav-list">
+            <div class="logo"><img src="../../media\VIT LOGO.png" alt="logo"
+                    style="border:3px solid white; border-radius:50px">
+            </div>
+            <li><a href="../../home.html">Home</a></li>
+            <li><a href="../../about.html">About</a></li>
+            <li><a href="../../services/services.html">Services</a></li>
+            <li><a href="../../contact.html">Contact Us</a></li>
+        </ul>
+        <div class="rightNav">
+            <input type="text" name="search" id="search" placeholder="Hola!">
+            <button class="` btn-sm">Search</button>
+        </div>
+    </nav>
+    <link rel="stylesheet" href="./laundry.css">
+    <section>
+        <div id="container">
+            <header>Register for Laundry </header>
+            <form method="post">
+            
+                <fieldset>
+                    <br />                    
+                    <input type="text" name="Room-Num" id="Room-Num" placeholder="Your Room Number" required value=>
+                    <br /><br /><br><br>
+                    <input type="text" name="Clothes_no" id="Clothes_no" placeholder="Number of clothes" required value=>
+                    <br /><br /><br><br>
+                    <input type="text" name="Instruction" id="Instruction" placeholder="Instructions if any." value=>
+                    <br /><br /><br>
+                    <label for="submit"></label>
+                    <button name="laundry_submit" id="submit" value="REGISTER">submit</button>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
+
+<?php
+// $query = "INSERT INTO laundry_table (Registration_No, Room, Clothes_no, Instruction)
+//   			  VALUES('$reg_no1' ,'$room_no1' ,'$Clothes_no' ,'$Instruction' )";
+//   	mysqli_query($db, $query);
+
+
+if (isset($_POST['laundry_submit'])){
+  $Clothes_no = mysqli_real_escape_string($db, $_POST['Clothes_no']);
+  $Instruction = mysqli_real_escape_string($db, $_POST['Instruction']);
+  
+  if (empty($Clothes_no)) {
+  	array_push($errors, "No. of Clothes is required");
+  }
+  if ($room_no = $room_no1 ) {
+    $query = "INSERT INTO laundry_table (Registration_No, Room, Clothes_no, Instruction)
+              VALUES('$reg_no1' ,'$room_no1' ,'$Clothes_no' ,'$Instruction' )";
+        mysqli_query($db, $query);
+  	header('location: ../../user/index.php');
+  }
+}

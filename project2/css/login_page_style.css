@@ -1,0 +1,166 @@
+*{
+  text-decoration: none;
+}
+html {
+  height: 100%;
+}
+body {
+  margin:0;
+  padding:0;
+  /* font-family: sans-serif; */
+  background-image: url('../media/bg_img_login.png')
+} 
+/*
+ .login-background {
+  background: rgba(0, 0, 0, 0.4)url('../media/Drafts/ocean__procreate__by_razuminc_de56hx0.jpg');
+  background-size: cover;
+  /* background-blend-mode: darken; 
+}*/
+.login-box {
+  position:absolute;
+  top: 80%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.7);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #038cf4;
+  font-size: 12px;
+}
+
+
+.btn11{
+   background-color: #038cf4;
+   padding: 10px 10px;
+   border-radius: 10px;
+   text-transform:uppercase;
+   color: white;
+   cursor: pointer;
+}
+
+/* NAVBAR */
+.logo {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 33%;
+  display: flex;
+
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+}
+
+.nav-dark {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.nav-list {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-list li {
+  list-style: none;
+  padding: 25px 30px;
+}
+
+
+.nav-list li a {
+ /* text-decoration: none;*/
+  color: white;
+}
+
+.nav-list li a:hover {
+ /* text-decoration: none;*/
+  color: grey;
+}
+
+.rightNav {
+  width: 30%;
+  text-align: right;
+  padding: 0 23px;
+}
+
+#search {
+  padding: 5px;
+  font-size: 17px;
+  border: 2px solid;
+  border-radius: 10px;
+}
+
+.btn {
+  padding: 18px 30px;
+  margin: 7px 0;
+  border: 2px solid white;
+  border-radius: 8px;
+  background: None;
+  color: white; 
+  cursor: pointer;
+}
+
+.btn-sm {
+  padding: 6px 10px;
+  vertical-align: middle;
+}
+
+.btn a{
+  color: white;
+}
+
+.btn:hover {  
+  background-color: rgba(255, 255, 255, 0.3);  
+}
